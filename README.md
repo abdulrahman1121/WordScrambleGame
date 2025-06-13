@@ -1,12 +1,55 @@
-# React + Vite
+Word Scramble & AI Chat Buddy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A kid-friendly web application built with Vite and React, featuring a word scramble game and a mock AI chat interface for young learners.
+Features
 
-Currently, two official plugins are available:
+Word Scramble Game:
+Unscramble words from a dictionary API (e.g., “tac” → “cat”).
++10 points for correct guesses.
+Hints show first and last letters.
+Confetti bursts and balloons float up on correct answers.
+Messages: “Yay! You got it!” or “Try again!”
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+AI Chat Widget:
+Blue user messages (right), purple AI responses (left) with smiley emojis (😊).
+Friendly, pre-programmed replies with typing animation.
+Send via button or Enter key.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Design:
+Vibrant gradient background, Comic Neue font, yellow buttons.
+Responsive across desktop and mobile.
+Animations for buttons, inputs, and balloons.
+
+
+
+Technologies
+
+React: Functional components with hooks.
+JavaScript: Core logic.
+CSS: Responsive styling and animations.
+Node.js: v23.11.0 .
+
+
+Gameplay
+
+Word Scramble:
+Unscramble the displayed word.
+Enter guess, click “Guess!” or press Enter.
+Correct guess: Confetti, balloons, +10 points, new word after 1.5s.
+Use “Need a Hint?” or “New Word” buttons.
+
+
+AI Chat:
+Type a message, click “Send” or press Enter.
+AI responds with a friendly message (e.g., “Great job! 😊”).
+
+
+
+API
+
+Word Scramble: Uses https://api.dictionaryapi.dev/api/v2/entries/en/happy.
+AI Chat: Client-side mock responses.
+
+
